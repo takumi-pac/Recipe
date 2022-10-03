@@ -9,7 +9,6 @@ import SwiftUI
 
 struct SearchView: View {
     @State var searchText: String = ""
-    //var recipe: Response
     
     var body: some View {
         HStack(spacing: 20) {
