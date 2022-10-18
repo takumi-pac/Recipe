@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct CalenderView: View {
+    // MARK: - PROPERTIES
+    @State private var date = Date()
+    
+    // MARK: - BODY
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack (alignment: .trailing){
+            DatePicker("Select Date", selection: $date)
+                .datePickerStyle(GraphicalDatePickerStyle())
+
+            Spacer()
+            
+        }
     }
 }
 
@@ -18,3 +28,4 @@ struct CalenderView_Previews: PreviewProvider {
         CalenderView()
     }
 }
+

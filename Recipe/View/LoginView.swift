@@ -17,7 +17,7 @@ struct LoginView: View {
     //        self.viewModel = viewModel
     //    }
     
-    @State private var isMenuView: Bool = false
+    @State private var isHomeView: Bool = false
     @State var newEmail: String = ""
     @State var newPassword: String = ""
     
@@ -48,7 +48,7 @@ struct LoginView: View {
                 Auth.auth().createUser(withEmail: self.newEmail, password: self.newPassword) { authResult, error in
                     if error == nil {
                         // do something
-                        isMenuView.toggle()
+                        isHomeView.toggle()
                     } else {
                         if let errCode = AuthErrorCode.Code(rawValue: error!._code) {
                             switch errCode {
@@ -74,8 +74,8 @@ struct LoginView: View {
             .frame(width: 200, height: 45)
             .foregroundColor(Color.white)
             .background(Color.gray)
-            .sheet(isPresented: $isMenuView) {
-                Menuview()
+            .sheet(isPresented: $isHomeView) {
+                HomeView()
             }
             
             // メールアドレス
@@ -95,7 +95,7 @@ struct LoginView: View {
                     if authResult?.user != nil {
                         // ログイン成功処理
                         print("success")
-                        isMenuView.toggle()
+                        isHomeView.toggle()
                     } else {
                         // ログイン失敗処理
                         if let error = error as NSError?, let errorCode = AuthErrorCode.Code(rawValue: error.code) {
@@ -107,7 +107,7 @@ struct LoginView: View {
                             case .userDisabled:
                                 self.errorMessage = "このユーザーアカウントは無効化されています"
                             default:
-                                self.errorMessage = error.domain
+                                self.errorMessage = "ログイン失敗" + error.domain
                             }
                         }
                     }
@@ -118,8 +118,8 @@ struct LoginView: View {
             .frame(width: 200, height: 45)
             .foregroundColor(Color.white)
             .background(Color.gray)
-            .fullScreenCover(isPresented: $isMenuView) {
-                Menuview()
+            .fullScreenCover(isPresented: $isHomeView) {
+                HomeView()
             }
         } //VSTACK
     }

@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import FirebaseFirestore
 
 struct Recipe: Identifiable {
     var id: String
     var name: String
     var ingredient: String
     var recipeImage: String
+//    var date: Date
 }

@@ -15,13 +15,23 @@
 		012E9ED228BCC5EB00517F6A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012E9ED128BCC5EB00517F6A /* LoginView.swift */; };
 		012E9ED428BCC5FD00517F6A /* Menuview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012E9ED328BCC5FD00517F6A /* Menuview.swift */; };
 		012E9ED628BCC61100517F6A /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012E9ED528BCC61100517F6A /* CalenderView.swift */; };
+		014959D428EAA15E0043BEF2 /* getData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014959D328EAA15E0043BEF2 /* getData.swift */; };
 		0151E8DF28EA9CC200E38523 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0151E8DE28EA9CC200E38523 /* RecipeModel.swift */; };
 		016090E728BE1D3300DC178E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 016090E628BE1D3300DC178E /* GoogleService-Info.plist */; };
 		016090EA28BE1F3B00DC178E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 016090E928BE1F3B00DC178E /* FirebaseAnalytics */; };
 		016090EC28BE1F3B00DC178E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 016090EB28BE1F3B00DC178E /* FirebaseAuth */; };
 		016090EE28BE1F3B00DC178E /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 016090ED28BE1F3B00DC178E /* FirebaseDatabase */; };
 		016090F028BE1F3B00DC178E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 016090EF28BE1F3B00DC178E /* FirebaseFirestore */; };
+		016A208A28EABC9900F408AA /* MenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016A208928EABC9900F408AA /* MenuRowView.swift */; };
+		016A208D28EAD15000F408AA /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 016A208C28EAD15000F408AA /* SDWebImageSwiftUI */; };
+		017DB25B28EBCEE20055C178 /* SelectableCalendarView in Frameworks */ = {isa = PBXBuildFile; productRef = 017DB25A28EBCEE20055C178 /* SelectableCalendarView */; };
+		017DB25D28EC19140055C178 /* RegisterMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017DB25C28EC19140055C178 /* RegisterMenuView.swift */; };
+		017DB25F28EC35CF0055C178 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017DB25E28EC35CF0055C178 /* ImagePicker.swift */; };
+		017DB26128EC395B0055C178 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017DB26028EC395B0055C178 /* PhotoView.swift */; };
 		018DE77F28C1F23100FB4CC1 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018DE77E28C1F23100FB4CC1 /* String+Extensions.swift */; };
+		01CA41BE28FE4D6000A0A569 /* ConvertImageToBase64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA41BD28FE4D6000A0A569 /* ConvertImageToBase64.swift */; };
+		01CA41C028FE4E1000A0A569 /* ConvertBase64ToImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA41BF28FE4E1000A0A569 /* ConvertBase64ToImage.swift */; };
+		01DDFE1728EADA7C00D83299 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DDFE1628EADA7C00D83299 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +44,17 @@
 		012E9ED128BCC5EB00517F6A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		012E9ED328BCC5FD00517F6A /* Menuview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menuview.swift; sourceTree = "<group>"; };
 		012E9ED528BCC61100517F6A /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
+		014959D328EAA15E0043BEF2 /* getData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getData.swift; sourceTree = "<group>"; };
 		0151E8DE28EA9CC200E38523 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		016090E628BE1D3300DC178E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		016A208928EABC9900F408AA /* MenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowView.swift; sourceTree = "<group>"; };
+		017DB25C28EC19140055C178 /* RegisterMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterMenuView.swift; sourceTree = "<group>"; };
+		017DB25E28EC35CF0055C178 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		017DB26028EC395B0055C178 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		018DE77E28C1F23100FB4CC1 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		01CA41BD28FE4D6000A0A569 /* ConvertImageToBase64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertImageToBase64.swift; sourceTree = "<group>"; };
+		01CA41BF28FE4E1000A0A569 /* ConvertBase64ToImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertBase64ToImage.swift; sourceTree = "<group>"; };
+		01DDFE1628EADA7C00D83299 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,10 +62,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				016A208D28EAD15000F408AA /* SDWebImageSwiftUI in Frameworks */,
 				016090EE28BE1F3B00DC178E /* FirebaseDatabase in Frameworks */,
 				016090F028BE1F3B00DC178E /* FirebaseFirestore in Frameworks */,
 				016090EA28BE1F3B00DC178E /* FirebaseAnalytics in Frameworks */,
 				016090EC28BE1F3B00DC178E /* FirebaseAuth in Frameworks */,
+				017DB25B28EBCEE20055C178 /* SelectableCalendarView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +79,7 @@
 			children = (
 				012E9EBF28BCC58C00517F6A /* Recipe */,
 				012E9EBE28BCC58C00517F6A /* Products */,
+				73AEFACADFD7BB510BA825C1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +128,10 @@
 				012E9ED328BCC5FD00517F6A /* Menuview.swift */,
 				012E9ED528BCC61100517F6A /* CalenderView.swift */,
 				0122EEC428C6E50C0059C3F8 /* SearchView.swift */,
+				016A208928EABC9900F408AA /* MenuRowView.swift */,
+				01DDFE1628EADA7C00D83299 /* HomeView.swift */,
+				017DB25C28EC19140055C178 /* RegisterMenuView.swift */,
+				017DB26028EC395B0055C178 /* PhotoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,8 +141,19 @@
 			children = (
 				018DE77E28C1F23100FB4CC1 /* String+Extensions.swift */,
 				0151E8DE28EA9CC200E38523 /* RecipeModel.swift */,
+				014959D328EAA15E0043BEF2 /* getData.swift */,
+				017DB25E28EC35CF0055C178 /* ImagePicker.swift */,
+				01CA41BD28FE4D6000A0A569 /* ConvertImageToBase64.swift */,
+				01CA41BF28FE4E1000A0A569 /* ConvertBase64ToImage.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		73AEFACADFD7BB510BA825C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +177,8 @@
 				016090EB28BE1F3B00DC178E /* FirebaseAuth */,
 				016090ED28BE1F3B00DC178E /* FirebaseDatabase */,
 				016090EF28BE1F3B00DC178E /* FirebaseFirestore */,
+				016A208C28EAD15000F408AA /* SDWebImageSwiftUI */,
+				017DB25A28EBCEE20055C178 /* SelectableCalendarView */,
 			);
 			productName = Recipe;
 			productReference = 012E9EBD28BCC58C00517F6A /* Recipe.app */;
@@ -172,6 +210,8 @@
 			mainGroup = 012E9EB428BCC58C00517F6A;
 			packageReferences = (
 				016090E828BE1F3B00DC178E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				016A208B28EAD15000F408AA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				017DB25928EBCEE20055C178 /* XCRemoteSwiftPackageReference "Selectable-Calendar-View" */,
 			);
 			productRefGroup = 012E9EBE28BCC58C00517F6A /* Products */;
 			projectDirPath = "";
@@ -200,13 +240,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				017DB25F28EC35CF0055C178 /* ImagePicker.swift in Sources */,
+				01CA41C028FE4E1000A0A569 /* ConvertBase64ToImage.swift in Sources */,
 				012E9ED228BCC5EB00517F6A /* LoginView.swift in Sources */,
+				01CA41BE28FE4D6000A0A569 /* ConvertImageToBase64.swift in Sources */,
 				0122EEC528C6E50C0059C3F8 /* SearchView.swift in Sources */,
 				018DE77F28C1F23100FB4CC1 /* String+Extensions.swift in Sources */,
+				014959D428EAA15E0043BEF2 /* getData.swift in Sources */,
 				012E9ED428BCC5FD00517F6A /* Menuview.swift in Sources */,
+				01DDFE1728EADA7C00D83299 /* HomeView.swift in Sources */,
 				012E9EC328BCC58C00517F6A /* ContentView.swift in Sources */,
 				0151E8DF28EA9CC200E38523 /* RecipeModel.swift in Sources */,
+				017DB26128EC395B0055C178 /* PhotoView.swift in Sources */,
 				012E9ED628BCC61100517F6A /* CalenderView.swift in Sources */,
+				016A208A28EABC9900F408AA /* MenuRowView.swift in Sources */,
+				017DB25D28EC19140055C178 /* RegisterMenuView.swift in Sources */,
 				012E9EC128BCC58C00517F6A /* RecipeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +369,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -339,6 +388,8 @@
 				DEVELOPMENT_TEAM = 4H5X69X66X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "カレンダーを使用します";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "アルバムを使用します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -368,6 +419,8 @@
 				DEVELOPMENT_TEAM = 4H5X69X66X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "カレンダーを使用します";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "アルバムを使用します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -418,6 +471,22 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		016A208B28EAD15000F408AA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		017DB25928EBCEE20055C178 /* XCRemoteSwiftPackageReference "Selectable-Calendar-View" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mszpro/Selectable-Calendar-View";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -440,6 +509,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 016090E828BE1F3B00DC178E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		016A208C28EAD15000F408AA /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016A208B28EAD15000F408AA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		017DB25A28EBCEE20055C178 /* SelectableCalendarView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 017DB25928EBCEE20055C178 /* XCRemoteSwiftPackageReference "Selectable-Calendar-View" */;
+			productName = SelectableCalendarView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
