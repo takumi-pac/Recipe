@@ -31,6 +31,8 @@
 		018DE77F28C1F23100FB4CC1 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018DE77E28C1F23100FB4CC1 /* String+Extensions.swift */; };
 		01CA41BE28FE4D6000A0A569 /* ConvertImageToBase64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA41BD28FE4D6000A0A569 /* ConvertImageToBase64.swift */; };
 		01CA41C028FE4E1000A0A569 /* ConvertBase64ToImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA41BF28FE4E1000A0A569 /* ConvertBase64ToImage.swift */; };
+		01CA41C528FEC8E800A0A569 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 01CA41C428FEC8E800A0A569 /* FirebaseStorage */; };
+		01CA41C728FEC8E800A0A569 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 01CA41C628FEC8E800A0A569 /* FirebaseStorageCombine-Community */; };
 		01DDFE1728EADA7C00D83299 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DDFE1628EADA7C00D83299 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,8 +66,10 @@
 			files = (
 				016A208D28EAD15000F408AA /* SDWebImageSwiftUI in Frameworks */,
 				016090EE28BE1F3B00DC178E /* FirebaseDatabase in Frameworks */,
+				01CA41C728FEC8E800A0A569 /* FirebaseStorageCombine-Community in Frameworks */,
 				016090F028BE1F3B00DC178E /* FirebaseFirestore in Frameworks */,
 				016090EA28BE1F3B00DC178E /* FirebaseAnalytics in Frameworks */,
+				01CA41C528FEC8E800A0A569 /* FirebaseStorage in Frameworks */,
 				016090EC28BE1F3B00DC178E /* FirebaseAuth in Frameworks */,
 				017DB25B28EBCEE20055C178 /* SelectableCalendarView in Frameworks */,
 			);
@@ -179,6 +183,8 @@
 				016090EF28BE1F3B00DC178E /* FirebaseFirestore */,
 				016A208C28EAD15000F408AA /* SDWebImageSwiftUI */,
 				017DB25A28EBCEE20055C178 /* SelectableCalendarView */,
+				01CA41C428FEC8E800A0A569 /* FirebaseStorage */,
+				01CA41C628FEC8E800A0A569 /* FirebaseStorageCombine-Community */,
 			);
 			productName = Recipe;
 			productReference = 012E9EBD28BCC58C00517F6A /* Recipe.app */;
@@ -212,6 +218,7 @@
 				016090E828BE1F3B00DC178E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				016A208B28EAD15000F408AA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				017DB25928EBCEE20055C178 /* XCRemoteSwiftPackageReference "Selectable-Calendar-View" */,
+				01CA41C328FEC8E800A0A569 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 012E9EBE28BCC58C00517F6A /* Products */;
 			projectDirPath = "";
@@ -487,6 +494,14 @@
 				kind = branch;
 			};
 		};
+		01CA41C328FEC8E800A0A569 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -519,6 +534,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 017DB25928EBCEE20055C178 /* XCRemoteSwiftPackageReference "Selectable-Calendar-View" */;
 			productName = SelectableCalendarView;
+		};
+		01CA41C428FEC8E800A0A569 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016090E828BE1F3B00DC178E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		01CA41C628FEC8E800A0A569 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016090E828BE1F3B00DC178E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

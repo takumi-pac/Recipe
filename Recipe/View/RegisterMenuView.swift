@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Firebase
+import FirebaseStorage
 
 struct RegisterMenuView: View {
     // MARK: - PROPERTIES
@@ -56,10 +57,36 @@ struct RegisterMenuView: View {
                 let db = Firestore.firestore()
                 db.collection("recipe").document(user.uid).setData([
                     "recipeName" : name,
-                    "ingredient" : ingredient,
-                    //画像を文字列に変換してデータベースに保存
-                    "recipeImage" : convertImageToBase64(recipeImage)!
+                    "ingredient" : ingredient
                 ])
+                
+                //firestore Storageに画像保存
+                let storage = Storage.storage()
+                let storageRef = storage.reference()
+                let path = "gs://recipe-896e2.appspot.com/Recipe"
+                let imageRef = storageRef.child(path)
+                
+                guard let data = recipeImage.pngData() else {
+                    return
+                }
+                let uploadTask = imageRef.putData(data)
+                
+                var downloadURL: URL?
+                //成功時の処理
+                uploadTask.observe(.success) { _ in
+                    imageRef.downloadURL{url, error in
+                        if let url = url {
+                            downloadURL = url
+                        }
+                    }
+                }
+                //失敗時の処理
+                uploadTask.observe(.failure) { snapshot in
+                    if let message = snapshot.error?.localizedDescription {
+                        print(message + "アップロード失敗")
+                    }
+                }
+                
             }, label: {
                 Text("登録")
             })
